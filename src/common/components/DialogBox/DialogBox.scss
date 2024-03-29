@@ -1,0 +1,26 @@
+.dialog-box-container {
+  .MuiPaper-root {
+    width: 35%;
+    height: 50%;
+  }
+  .box-align {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.submit-button-dialogBox {
+  background: #6567dc;
+  color: white;
+  margin-right: 18px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  min-width: 100px;
+  height: 40px;
+  text-transform: capitalize;
+  &:hover {
+    background-color: #6567dc;
+  }
+}

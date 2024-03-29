@@ -1,0 +1,107 @@
+.related-action-container {
+  .action-container {
+    position: relative;
+    button.delete-button {
+      background-color: white;
+      border: 1px solid #dededf;
+      color: #1b1c1d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 8px 16px;
+      cursor: pointer;
+      p {
+        font-size: 14px;
+        font-family: InterMedium, sans-serif;
+        font-weight: 500;
+        line-height: 17px;
+        margin: 0;
+      }
+      p.dropdown-arrow {
+        transition: all 0.3s;
+        &.arrow-up {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .action-menu {
+      position: absolute;
+      width: 100%;
+      padding: 8px 16px;
+      max-height: 100px;
+      box-shadow: 0px 40px 40px #00000029;
+      border: 1px solid #dededf;
+      border-radius: 4px;
+      background-color: white;
+      z-index: 2;
+      overflow-y: auto;
+      .action-item {
+        padding: 8px 0;
+        label {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          line-height: 17px;
+          color: #131313;
+          cursor: pointer;
+          input {
+            margin: 0;
+            margin-right: 7.5px;
+            accent-color: black;
+            border-radius: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .showcase-container {
+    margin-top: 10px;
+    .showcase-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 8px 16px;
+      align-items: center;
+      border-bottom: 1px solid #dededf;
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #131313;
+      }
+      .showcase-action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 15px;
+        label {
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 15px;
+          color: #131313;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          input {
+            margin: 0;
+            margin-right: 10px;
+            font-size: inherit;
+          }
+        }
+        button {
+          border: none;
+          padding: 2px;
+          background-color: #e0e0e0;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

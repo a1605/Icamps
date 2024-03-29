@@ -1,0 +1,89 @@
+.create-option-main-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(36, 36, 36, 0.15);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  .option-wrapper {
+    background-color: white;
+    border-radius: 16px;
+    padding: 43px 40px;
+    width: 550px;
+    .option-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+      .header-text {
+        h3 {
+          font-size: 23px;
+          font-weight: bold;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #8a8888;
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+      .container-close {
+        button {
+          background-color: #f1f3fc;
+          padding: 9px;
+          border: none;
+          font-weight: bold;
+          color: #959393;
+          font-size: 21px;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+        }
+      }
+    }
+    .option-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .option-row {
+        margin: 9px 0;
+        display: flex;
+        justify-content: space-between;
+        .option-item {
+          margin: 0;
+          button {
+            padding: 23px 24px;
+            border-radius: 10px;
+            background-color: #f1f3fc;
+            border: 1px solid #6467e4;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 220px;
+            color: #505050;
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+            cursor: pointer;
+            p {
+              margin: 0;
+            }
+            .item-text {
+              margin-left: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+button.app-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 40px;
+  white-space: pre;
+  &.solid {
+    background: #6567dc 0% 0% no-repeat padding-box;
+    color: white;
+    border: 1px solid #6467e4;
+    min-width: 100px;
+  }
+  &.outlined {
+    color: #6467e4;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #6467e4;
+    min-width: 100px;
+  }
+  &.disabled-button {
+    color: inherit;
+    width: 100px;
+    cursor: not-allowed;
+  }
+}

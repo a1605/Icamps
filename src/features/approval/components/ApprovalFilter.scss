@@ -1,0 +1,33 @@
+.approval-filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px 10px 0px;
+  overflow-x: scroll;
+ 
+
+  .approval-serach {
+    margin: 0px 14px 0px 14px;
+    & {
+      @media (max-width: 1100px) {
+        margin: 0px 12px 0px 12px;
+      }
+    }
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #767676;
+    gap: 20px;
+    font-weight: 600;
+
+    .clear-chip .clear-all-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: none; // To show clear all button remove this complete line
+    }
+  }
+}

@@ -1,0 +1,20 @@
+div.view-text {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d8d5d5;
+  padding-top: 30px;
+  width: 80% !important;
+  p {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  p:nth-of-type(1) {
+    color: #8a8888;
+  }
+  p:nth-of-type(2) {
+    color: #494949;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+}

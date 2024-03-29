@@ -1,0 +1,31 @@
+.icon-container {
+  .MuiButton-contained {
+    background-color: #6567dc;
+    border-color: #6567dc;
+    color: white;
+    text-transform: capitalize;
+    white-space: pre;
+    &:hover {
+      background-color: #6567dc;
+    }
+  }
+
+  .MuiButton-outlined {
+    border-color: #6567dc;
+    color: #6567dc;
+    text-transform: capitalize;
+    padding: 7px;
+    height: 40px;
+    font-weight: bold;
+    white-space: pre;
+    min-width: 100px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .icon-image {
+    width: 15px;
+    margin-right: 2px;
+  }
+}

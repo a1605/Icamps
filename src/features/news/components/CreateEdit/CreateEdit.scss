@@ -1,0 +1,257 @@
+.create-edit-container {
+  .edit-header {
+    padding: 15px;
+    outline: 1px solid #d3d3d3;
+    & {
+      @media (min-width: 1024px) and (max-width: 1535px) {
+        padding: 10px;
+      }
+    }
+  }
+  .MuiAutocomplete-root {
+    width: auto;
+  }
+
+  .block-wrapper {
+    background-color: #f8f8f8;
+    .create-notification {
+      margin-right: 7px;
+      padding-bottom: 40px;
+      box-shadow: none;
+    }
+    .crete-block {
+      margin-right: 7px;
+      padding-bottom: 40px;
+      box-shadow: none;
+      margin-top: 5px;
+    }
+
+    .related-block {
+      margin-right: 7px;
+      margin-top: 7px;
+      padding-bottom: 30px;
+      box-shadow: none;
+    }
+    .primary-inventory {
+      margin-right: 7px;
+      margin-top: 7px;
+      padding-bottom: 30px;
+      box-shadow: none;
+    }
+
+    .tag-block {
+      margin-top: 7px;
+      padding-bottom: 30px;
+      margin-right: 7px;
+      box-shadow: none;
+    }
+  }
+
+  .multi-button-wrapper {
+    display: flex;
+    align-items: left;
+    column-gap: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .common-radio-button {
+      height: 40px;
+      min-width: 110px;
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      background-color: transparent;
+      margin: 5px 0;
+    }
+
+    .radio-button-red {
+      border: 1px solid blue;
+      border-radius: 4px;
+      background-color: #d9ebff;
+    }
+
+    .button-text {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .radio-button-orange {
+      border: 1px solid blue;
+      border-radius: 4px;
+      background-color: #d9ebff;
+    }
+
+    .radio-button-blue {
+      border: 1px solid blue;
+      border-radius: 4px;
+      background-color: #d9ebff;
+    }
+
+    .radio-button-green {
+      border: 1px solid blue;
+      border-radius: 4px;
+      background-color: #d9ebff;
+    }
+  }
+
+  .title-Label {
+    height: 21px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.18px;
+    color: #6467e4;
+    margin-left: 13px;
+    margin-top: 18px;
+  }
+
+  .header-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .edit-title {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 1rem;
+      width: 40%;
+      align-items: center;
+
+      .back-icon-header {
+        color: #494949;
+        margin-left: 0px;
+        height: 25px;
+      }
+
+      .header-label {
+        font-weight: bold;
+        font-size: 18px;
+        color: #494949;
+        margin-left: 5px;
+        margin-right: 20px;
+        white-space: nowrap;
+      }
+    }
+
+    .submit-wrapper {
+      width: 60%;
+      display: flex;
+      font-size: 6px;
+      font-weight: 600;
+      text-transform: capitalize;
+
+      .submit-button {
+        display: flex;
+        column-gap: 12px;
+        margin-left: 25px;
+        width: 100%;
+        text-transform: capitalize;
+        justify-content: end;
+      }
+
+      .save-draft-button {
+        min-width: 100px;
+        border-color: #6467e4;
+        font-size: 11px;
+        font-weight: bold;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #6467e4;
+        white-space: nowrap;
+        text-transform: capitalize;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      .submit {
+        min-width: 150px;
+        border-color: #6467e4;
+        font-size: 12px;
+        white-space: nowrap;
+        font-weight: bold;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-transform: capitalize;
+      }
+
+      .cancel-button {
+        border-color: #8a8888;
+        font-size: 12px;
+        white-space: nowrap;
+        font-weight: bold;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-transform: capitalize;
+
+        &:hover {
+          background-color: transparent;
+          opacity: 1px;
+        }
+
+        color: #8a8888;
+      }
+
+      .advise-button {
+        min-width: 120px;
+        border-color: #6467e4;
+        font-size: 12px;
+        outline-color: #6467e4;
+        font-weight: bold;
+        white-space: nowrap;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #6467e4;
+        text-transform: capitalize;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .tag-Input {
+    width: 98%;
+    margin-left: 15px;
+    margin-top: 10px;
+    .MuiInputBase-root {
+      width: 100%;
+    }
+  }
+
+  .main-title-Label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.18px;
+    color: #6467e4;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+
+  .outer-chips {
+    margin-top: 3%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .chips-align {
+      margin-top: 1%;
+      margin-bottom: 1%;
+      margin-left: 0%;
+      margin-right: 1%;
+      border-radius: 0px;
+      height: 5%;
+    }
+  }
+}

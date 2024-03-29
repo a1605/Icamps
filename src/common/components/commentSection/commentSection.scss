@@ -1,0 +1,123 @@
+.comment-section-wrapper {
+  // position: relative;
+  .image-section button.view-comments {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .comments-section {
+    position: absolute;
+    z-index: 2;
+    padding: 30px 30px 60px 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 29px 45px #00000029;
+    border: 1px solid #d3d3d3;
+    width: 28rem;
+    height: 86.5%;
+    right: 12px;
+    display: none;
+    top: 152px;
+    transition: all 0.3s;
+    overflow: auto;
+    &.open-comment-section {
+      display: block;
+    }
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        color: #6467e4;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .container-close {
+        button {
+          background-color: transparent;
+          padding: 9px;
+          border: none;
+          font-weight: 400;
+          color: #959393;
+          font-size: 12px;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+        }
+      }
+    }
+    .comments-list {
+      height: 70%;
+      overflow-y: auto;
+      margin-top: 20px;
+
+      &.full-height {
+        height: 95%;
+      }
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .comment-item {
+        margin-top: 60px;
+        .name-sec {
+          display: flex;
+          align-items: center;
+          h5 {
+            font-size: 16px;
+            color: #1f2026;
+            margin: 0;
+            text-transform: capitalize;
+          }
+        }
+        .date-sec p {
+          margin: 0;
+          font-size: 12px;
+          font-weight: 500;
+          color: #8a8888;
+          font-family: InterMedium, sans-serif;
+          margin-top: 5px;
+        }
+        .comment {
+          margin-top: 25px;
+          p {
+            // margin-top: 20px;
+            font-size: 16px;
+            color: #1f2026;
+            font-weight: 500;
+            font-family: InterMedium, sans-serif;
+            width: 85%;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+    .add-comment {
+      position: fixed;
+      z-index: 2;
+      bottom: 10px;
+      right: 20px;
+      .MuiFormControl-root {
+        width: 400px;
+        background-color: white;
+      }
+      .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+        width: 100%;
+      }
+    }
+  }
+}

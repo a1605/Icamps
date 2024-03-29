@@ -1,0 +1,75 @@
+.app-multiselect {
+  .Mui-focused {
+    outline: none;
+  }
+  .MuiAutocomplete-root {
+    min-width: 250px;
+    .MuiAutocomplete-inputRoot.MuiInputBase-root.MuiOutlinedInput-root {
+      // padding: 6px;
+      flex-wrap: nowrap;
+    }
+    .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-input {
+      height: 20px;
+      font-size: 12px;
+      min-width: unset;
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+    .MuiAutocomplete-endAdornment {
+      // margin-top: -5px;
+      display: flex;
+      align-items: center;
+      top: unset;
+    }
+  }
+  .MuiChip-root {
+    border-radius: 2px;
+    height: 22px;
+    padding: 3px 6px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    color: #494949;
+  }
+
+  .MuiSvgIcon-root {
+    height: 30px;
+  }
+  .MuiInputBase-root {
+    height: 38px;
+  }
+}
+
+.selectedTags {
+  // margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  .chips-drawer {
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.selected-values-container {
+  font-size: 12px;
+  margin-left: 5px;
+  font-weight: 600;
+  overflow: hidden;
+  // max-width: 150px;
+  width: 60%;
+  .label-select {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 90%;
+    min-width: 20px;
+    // width: 90%;
+  }
+  div {
+    white-space: nowrap;
+  }
+}

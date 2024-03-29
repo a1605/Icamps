@@ -1,0 +1,98 @@
+.miscellaneous-cantainer {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  .miscellaneous-label {
+    padding-right: 27px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-left: 30px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .miscellaneous-add-button {
+    .MuiButtonBase-root {
+      height: 46px;
+    }
+  }
+  .issue-action-tabs {
+    margin-bottom: 0px;
+    .issue-tab {
+      display: flex;
+      column-gap: 15px;
+      height: 47px;
+      justify-content: start;
+      padding-top: 10px;
+      align-items: center;
+      padding-bottom: 13px;
+      position: relative;
+      max-width: 100%;
+      overflow-y: hidden;
+      transition: all 0.4s;
+      &::after {
+        content: "";
+        height: 3px;
+        width: 100px;
+        background-color: #6467e4;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        top: 32px;
+        transition: all 0.4s;
+      }
+      &.permission {
+        &::after {
+          transform: translateX(170px);
+          width: 90px;
+        }
+      }
+      &.libraries {
+        &::after {
+          transform: translateX(310px);
+          width: 140px;
+        }
+      }
+      &.publisher {
+        &::after {
+          transform: translateX(495px);
+          width: 100px;
+        }
+      }
+      &.cpu {
+        &::after {
+          transform: translateX(692px);
+          width: 40px;
+        }
+      }
+      &.gpu {
+        &::after {
+          transform: translateX(857px);
+          width: 40px;
+        }
+      }
+      .tabs-button {
+        width: 150px;
+        button {
+          background-color: transparent;
+          border: none;
+          color: #494949;
+          font-size: 16px;
+          font-weight: normal;
+          text-decoration: none;
+          width: 160px;
+          cursor: pointer;
+          &:nth-of-type(2) {
+            text-align: right;
+          }
+          &.active {
+            font-weight: bold;
+        
+          }
+        }
+      }
+    }
+    .tab-line {
+      margin-top: 0px;
+    }
+  }
+}

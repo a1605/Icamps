@@ -1,0 +1,18 @@
+.timeline-container {
+  padding-top: 5px;
+  .head-timeline {
+    margin-bottom: 6px;
+    p {
+      margin: 0;
+    }
+  }
+  .comment-info-container {
+    display: grid;
+    grid-template-columns: 145px 211px;
+    grid-row-gap: 5px;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

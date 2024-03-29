@@ -1,0 +1,102 @@
+
+  .assignee-dialog-title {
+    letter-spacing: 0.18px;
+    color: #6467e4;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    margin: 0;
+    // margin-bottom: 10px;
+    // margin-top: 20px;
+  }
+  .select-container {
+    position: relative;
+    select {
+      padding: 15px 20px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 19px;
+      width: 100%;
+      appearance: none;
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      margin-bottom: 5px;
+      &::placeholder {
+        color: #959393;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+      &.error-select {
+        border-color: red;
+        cursor: not-allowed;
+        margin-bottom: 0;
+      }
+    }
+    .select-dropdown-icon {
+      position: absolute;
+      right: 10px;
+      top: 13px;
+    }
+  }
+
+  .error-block {
+    p {
+      color: red;
+      font-size: 12px;
+      margin: 0;
+      margin-bottom: 15px;
+      text-align: right;
+    }
+  }
+  .comment-container {
+    .text-area-description {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      margin-top: 10px;
+      padding: 14px 19px;
+      max-width: 100%;
+      min-width: 40%;
+      max-height: 150px;
+      font-size: 14px;
+      line-height: 19px;
+      resize: none;
+      font-family: "Inter", sans-serif;
+      &::placeholder {
+        color: #959393;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    .isError {
+      border: 1px solid red;
+    }
+  }
+  .MuiDialogActions-root {
+    .assignee-action-button {
+      // margin-top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-bottom: 15px;
+    }
+  }
+  .select-dropdown-icon {
+    position: absolute;
+    right: 90px;
+    top: 96px;
+  }
+  .assignee-action-button {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .assignee-box.error-assignee-box {
+    height: 370px;
+  }

@@ -1,0 +1,72 @@
+.issues-action-container {
+  background-color: #f8f8f8;
+  flex-grow: 1;
+  overflow: hidden;
+  .search-section {
+    padding: 0 26px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    .search-icon-container {
+      position: relative;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      color: #d8d5d5;
+    }
+    .MuiInputBase-input.MuiOutlinedInput-input {
+      width: 75%;
+    }
+  }
+  .issue-action-tabs {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .issue-tab {
+      display: flex;
+      // flex-direction: row;
+      column-gap: 15px;
+      justify-content: start;
+      align-items: center;
+      padding-bottom: 13px;
+      position: relative;
+      width: 155px;
+      transition: all 0.4s;
+      &::after {
+        content: "";
+        height: 3px;
+        width: 70px;
+        background-color: #6467e4;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        // right: unset;
+        transition: all 0.4s;
+      }
+      &.action {
+        &::after {
+          transform: translateX(85px);
+        }
+      }
+      .tabs-button {
+        width: 70px;
+        button {
+          background-color: transparent;
+          border: none;
+          color: #494949;
+          font-size: 16px;
+          font-weight: normal;
+          text-decoration: none;
+          cursor: pointer;
+          &:nth-of-type(2) {
+            text-align: right;
+          }
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

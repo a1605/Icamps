@@ -1,0 +1,39 @@
+.assignee-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d9ebff;
+  width: 25vw;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  padding: 20px 16px;
+  .title {
+    color: #6467e4;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .digits-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 89px;
+    padding: 0px 14px;
+  }
+  p {
+    font-size: 14px;
+    color: #8a8888;
+    margin: 0;
+  }
+  .infoDigits {
+    display: flex;
+    justify-content: end;
+    margin: 4px 0px 0px 0px;
+    color: #535353;
+    font-size: 30px;
+  }
+  .infoSkeleton{
+    margin: 4px 0px 0px 0px;
+    font-size: 30px;
+  }
+}

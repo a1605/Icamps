@@ -1,0 +1,33 @@
+export const devicedummyData = [{
+    "deviceId":"1234",
+    "sourceTicketId":"N3242",
+    "manufacturer":"Samsung",
+    "modelName":"Galaxy Flip 3",
+    "updatedBy":"Joseph Mary",
+    "updatedOn":"2023-06-21",
+    "status":"Draft",
+},{
+    "deviceId":"5674",
+    "sourceTicketId":"V4567",
+    "manufacturer":"Nokia",
+    "modelName":"Galaxy Flip 3",
+    "updatedBy":"Joseph Mary",
+    "updatedOn":"2023-06-21",
+    "status":"In-review",
+},{
+    "deviceId":"1234",
+    "sourceTicketId":"N3242",
+    "manufacturer":"Oppo",
+    "modelName":"Galaxy Flip 3",
+    "updatedBy":"Joseph Mary",
+    "updatedOn":"2023-06-21",
+    "status":"Approved",
+},{
+    "deviceId":"1234",
+    "sourceTicketId":"N3242",
+    "manufacturer":"Vivo",
+    "modelName":"Galaxy Flip 3",
+    "updatedBy":"Joseph Mary",
+    "updatedOn":"2023-06-21",
+    "status":"Rejected",
+}]

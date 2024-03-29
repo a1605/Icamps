@@ -1,0 +1,11 @@
+.create-role-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  h3.create-role-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: #1b1c1d;
+    text-transform: capitalize;
+  }
+}

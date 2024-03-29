@@ -1,0 +1,131 @@
+.display-header {
+  padding: 8px 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  overflow-x: scroll;
+  .details-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    .details-section1,
+    .details-section2 {
+      display: flex;
+      align-items: center;
+      h3, h5{
+        white-space: pre-line;
+      }
+    }
+    .ticket-url {
+      padding-left: 5px;
+      padding-right: 10px;
+      color: #6467e4;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .header-title h3 {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin: 0;
+      margin-right: 15px;
+      white-space: pre;
+    }
+    .header-ticket-id {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 15px;
+      margin-right: 30px;
+      h5 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #323232;
+        margin: 0;
+        white-space: pre;
+      }
+      a{
+        white-space: pre;
+      }
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #323232;
+        margin: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+  .action-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+    .header-comment-section {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .display-header {
+    .action-section {
+      .header-comment-section {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .display-header {
+    .details-section {
+      .header-title h3 {
+        font-size: 16px;
+      }
+      .header-ticket-id {
+        h5 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .action-section {
+      column-gap: 0px;
+      .header-comment-section {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 939px) {
+  .display-header {
+    .details-section {
+      .header-title h3 {
+        font-size: 16px;
+      }
+      .header-ticket-id {
+        margin-left: 0;
+        h5 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .action-section {
+      column-gap: 0px;
+      .header-comment-section {
+        margin-right: 10px;
+      }
+    }
+  }
+}

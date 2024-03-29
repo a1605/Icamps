@@ -1,0 +1,26 @@
+.approval-device-filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px 10px 0px;
+
+  .approval-device-search {
+    margin-left: 20px;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #767676;
+    gap: 20px;
+    font-weight: 600;
+
+    .clear-chip .clear-all-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: none; // To show clear all button remove this complete line
+    }
+  }
+}

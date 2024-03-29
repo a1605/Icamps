@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: icamps-admin-frontend
+  labels:
+    app: icamps-admin-frontend
+    type: frontend
+    application: icamps
+    environment: dev
+  namespace: icamps
+spec:
+  replicas: 2
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: icamps-admin-frontend
+  template:
+    metadata:
+      labels:
+        app: icamps-admin-frontend
+        application: icamps
+        environment: dev
+    spec:
+      serviceAccountName: icamps-gke-sa
+      containers:
+      - image: asia-south1-docker.pkg.dev/icamps-dev/iamai-dev-art-regi-as-s1/icamps-admin-frontend:COMMIT_SHA
+        imagePullPolicy: Always
+        name: icamps-admin-frontend-pod
+        securityContext:
+           runAsNonRoot: true
+           runAsUser: 9001
+           runAsGroup: 9001
+           allowPrivilegeEscalation: false
+        ports:
+          - containerPort: 8080
+            name: app-port
+        # envFrom:
+        #   - secretRef:
+        #       name: icamps-admin-frontend-secrets
+        # resources:
+        #   requests:
+        #     memory: "1024Mi"
+        #     cpu: "250m"
+        #   limits:
+        #     memory: "2048Mi"
+        #     cpu: "700m"
+        # livenessProbe:
+        #   failureThreshold: 3
+        #   httpGet:
+        #     path: /actuator/health
+        #     port: management-port
+        #     scheme: HTTP
+        #   initialDelaySeconds: 120
+        #   periodSeconds: 30
+        #   successThreshold: 1
+        #   timeoutSeconds: 20

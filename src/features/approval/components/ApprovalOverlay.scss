@@ -1,0 +1,74 @@
+.dialog-container {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .dialog-content {
+    max-width: 580px !important;
+    min-width: 450px !important;
+    margin: auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: white;
+
+    h2 {
+      margin: 20px 20px 0px 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #d3d3d3;
+    }
+
+    p {
+      color: #535353;
+      font-size: 13px;
+      margin-bottom: 50px;
+    }
+
+    .reject-content {
+      height: 350px;
+
+      h5 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #6467e4;
+      }
+      .checkbox-section {
+        display: flex;
+        flex-wrap: wrap;
+        label {
+          color: black;
+          font-size: 12px;
+          font-weight: 500;
+          margin-right: 30px;
+          font-family: "InterMedium", sans-serif;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          white-space: nowrap;
+          align-items: center;
+          margin-bottom: 10px;
+          cursor: pointer;
+          input {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      textarea {
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: "Inter", sans-serif;
+        resize: none;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+}

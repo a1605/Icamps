@@ -1,0 +1,12 @@
+.create-issue-input {
+  &:focus-visible {
+    outline: none;
+  }
+  &:focus-within {
+    outline: none;
+    --Textarea-focusedHighlight: none;
+  }
+  &.Joy-error {
+    --Textarea-focusedHighlight: var(--joy-palette-danger-500, #d3232f);
+  }
+}

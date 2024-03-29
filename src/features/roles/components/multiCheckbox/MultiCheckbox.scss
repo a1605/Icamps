@@ -1,0 +1,16 @@
+.multi-checkbox-wrapper {
+  background-color: #f1f3fc;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  .checkbox-wrapper {
+    min-width: 110px;
+    width: max-content;
+    label {
+      margin-right: 10px;
+      font-weight: normal !important;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+}

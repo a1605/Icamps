@@ -1,0 +1,42 @@
+.upsert-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+  height: 67px;
+  padding: 21px 31px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .btn {
+      text-transform: capitalize;
+      background-color: #6567dc;
+    }
+    .cancel-button {
+      border-color: #6567dc;
+      color: #6567dc;
+      font-size: 12px;
+      white-space: nowrap;
+      font-weight: bold;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: transparent;
+        opacity: 1px;
+      }
+    }
+  }
+}

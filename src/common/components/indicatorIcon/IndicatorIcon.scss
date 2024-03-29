@@ -1,0 +1,38 @@
+.indicator-icon {
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  font-size: 14px;
+  color: #535353;
+  white-space: pre;
+  & {
+    @media screen and (max-width: 1100px) {
+      font-size: 12px;
+    }
+  }
+  svg {
+    font-size: 14px;
+    margin-right: 3px;
+    &:is(.IN_PROGRESS) {
+      color: #d6d5d5;
+    }
+    &:is(.IN_APPROVAL) {
+      color: #fff0b2;
+    }
+    &:is(.APPROVED) {
+      color: #b4ffc5;
+    }
+    &:is(.REJECTED) {
+      color: #ffd0d0;
+    }
+    &:is(.ADVICE_C) {
+      color: #fff0b2;
+    }
+    &:is(.ADVICE_A) {
+      color: #fff0b2;
+    }
+    &:is(.REQ_UNPUBLISHED) {
+      color: #fff0b2;
+    }
+  }
+}

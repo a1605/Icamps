@@ -1,0 +1,27 @@
+.assignee-text-field-container{
+  position: static;
+  display: flex;
+  align-items: center;
+  &.change-assignee{
+    cursor: pointer;
+  }
+  .assignee-outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6467e4;
+    padding: 3px;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    text-transform: uppercase;
+    // cursor: default;
+    .assignee-text {
+      margin: 0;
+      font-weight: bold;
+      font-size: 12px;
+      color: white;
+    }
+  }
+  
+}

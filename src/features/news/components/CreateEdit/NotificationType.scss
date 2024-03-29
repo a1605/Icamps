@@ -1,0 +1,14 @@
+.notification-block {
+  .network-checkbox {
+    display: flex;
+    flex-direction: row;
+    // display: none;
+    .notification {
+      margin-left: 17px;
+      .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+        color: #6467e4;
+      }
+      
+    }
+  }
+}

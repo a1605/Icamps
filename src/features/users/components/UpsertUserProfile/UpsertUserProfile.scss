@@ -1,0 +1,40 @@
+.user-profile-container {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #ffffff;
+  .user-name {
+    display: flex;
+  }
+  .userName {
+    display: flex;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .vertical-line {
+    position: relative;
+    height: 80px;
+    width: 2px;
+    background-color: #f2f2f4;
+  }
+
+  input.remove-borders {
+    border: none;
+    outline: none;
+    pointer-events: none;
+    font-weight: bold;
+    padding-left: 0;
+  }
+  .title-container {
+    padding-bottom: 5px;
+  }
+  .label-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #767676;
+  }
+}

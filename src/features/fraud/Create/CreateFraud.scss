@@ -1,0 +1,229 @@
+.fraud-edit-block {
+  .create-wrapper {
+    margin-left: 70px;
+    margin-top: 70px;
+    .best-Input {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      &.view-key-issue-input {
+        margin-top: 0;
+      }
+
+      .view {
+        border: none;
+        .quill {
+          width: 95%;
+          max-height: fit-content !important;
+          .ql-editor {
+            font-family: sans-serif;
+            font-size: medium;
+          }
+        }
+        .ql-toolbar {
+          display: none;
+        }
+        .ql-container {
+          border: transparent;
+        }
+        .MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled {
+          -webkit-text-fill-color: black;
+        }
+      }
+      .best-label {
+        font-size: 16px;
+        margin-left: 0px;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .keyContainer {
+        height: 10rem;
+        .quill {
+          width: 100%;
+          height: 100px;
+          .ql-editor {
+            font-family: sans-serif;
+            font-size: medium;
+          }
+        }
+        .ql-toolbar,
+        .ql-container {
+          padding: 3px 0px 0px 8px;
+        }
+      }
+      .keyContainer-error {
+        height: 10rem;
+        .richContainer {
+          height: 8rem;
+        }
+        .quill {
+          width: 100%;
+          height: 100px;
+          .ql-editor {
+            font-family: sans-serif;
+            font-size: medium;
+          }
+        }
+        .ql-toolbar,
+        .ql-container {
+          border-color: red;
+          padding: 3px 0px 0px 8px;
+        }
+      }
+      .step-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 103.5%;
+
+        .single-step-wrapper {
+          display: flex;
+          width: 100%;
+          margin-top: 1.5rem;
+          margin-bottom: 2rem;
+          &.view-single-step-wrapper {
+            margin-bottom: 0;
+            padding-left: 14px;
+          }
+          strong {
+            padding: 12px 0;
+            font-size: 12px;
+            width: 60px;
+          }
+          .quill {
+            width: 100%;
+            height: 100px;
+            .ql-toolbar,
+            .ql-container {
+              padding: 3px 0px 0px 8px;
+            }
+            .ql-editor {
+              font-family: sans-serif;
+              font-size: medium;
+            }
+          }
+          .remove-icon {
+            display: flex;
+            justify-content: end;
+            padding-left: 10px;
+            height: 2rem;
+            .close-icon {
+              cursor: pointer;
+              background-color: #6567dc;
+              border: none;
+              border-radius: 10px;
+              .deleteContainer {
+                display: flex;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+      .stepsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        .editor-error-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .quill {
+            width: 100%;
+            height: 100px;
+            .ql-editor {
+              font-family: sans-serif;
+              font-size: medium;
+            }
+          }
+          .ql-toolbar,
+          .ql-container {
+            padding: 3px 0px 0px 8px;
+          }
+          .errorBox {
+            margin-top: 43px;
+          }
+        }
+        .add-icon-container {
+          display: flex;
+          justify-content: end;
+          height: 2rem;
+          .add-icon {
+            cursor: pointer;
+            background-color: #6567dc;
+            border: none;
+            width: 6rem;
+            border-radius: 10px;
+            .addContainer {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      .stepsContainer-error {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .editor-error-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .quill {
+            width: 100%;
+            height: 100px;
+            .ql-editor {
+              font-family: sans-serif;
+              font-size: medium;
+            }
+            .ql-editor {
+              font-family: sans-serif;
+              font-size: medium;
+            }
+          }
+          .errorBox {
+            margin-top: 43px;
+          }
+        }
+        .ql-toolbar,
+        .ql-container {
+          border-color: red;
+        }
+
+        .add-icon-container {
+          padding-left: 10px;
+        }
+      }
+
+      .viewSteps {
+        display: none !important;
+      }
+
+      .view {
+        .quill {
+          width: 100%;
+          max-height: fit-content !important;
+          .ql-editor {
+            font-family: sans-serif;
+            font-size: medium;
+          }
+          .ql-editor {
+            font-family: sans-serif;
+            font-size: medium;
+          }
+        }
+        .ql-toolbar {
+          display: none;
+        }
+        .ql-container {
+          border: transparent;
+        }
+      }
+    }
+  }
+}

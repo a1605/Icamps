@@ -1,0 +1,188 @@
+.create-app-block-container {
+  display: flex;
+  flex-direction: row;
+
+  .device-Input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    .device-label {
+      font-size: 14px;
+      margin-left: 0px;
+      color: black;
+      font-weight: 400;
+      display: block;
+    }
+
+    .MuiInputBase-root.MuiOutlinedInput-root {
+      margin-top: 8px;
+      height: 40px;
+      padding-left: 0px;
+      .MuiInputBase-input {
+        font-size: 14px;
+      }
+      .MuiInputBase-input::placeholder {
+        font-size: 14px;
+        color: #838383;
+      }
+    }
+    .MuiFormControl-root {
+      width: 100%;
+    }
+    .MuiInputBase-input {
+      padding: 8px;
+    }
+  }
+  .app-Input {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .device-label {
+      font-size: 14px;
+      margin-left: 0px;
+      color: black;
+      font-weight: 400;
+      display: block;
+    }
+
+    .MuiInputBase-root.MuiOutlinedInput-root {
+      margin-top: 8px;
+      height: 40px;
+      .MuiInputBase-input {
+        font-size: 14px;
+      }
+      .MuiInputBase-input::placeholder {
+        font-size: 14px;
+        color: #838383;
+      }
+    }
+  }
+
+  .left-block {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    .dropdown-align {
+      .MuiAutocomplete-root {
+        width: 100%;
+      }
+      .dropdown-single-align{
+        .MuiInputBase-root.MuiOutlinedInput-root{
+          padding-left: 0px;
+        }
+      }
+    }
+    .dropdown-single-align {
+      .MuiAutocomplete-root {
+        width: 100%;
+      }
+      .MuiInputBase-input {
+        // padding: 0px;
+      }
+    }
+    .upload-Button {
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 15px;
+
+      .image-preview {
+        height: 40px;
+
+        .image-wrapper {
+          margin-left: 20px;
+          height: 40px;
+          & {
+            @media (min-width: 1200px) and (max-width: 1300px) {
+              margin-left: 5px;
+              height: 38px;
+            }
+          }
+        }
+
+        .cancel-icon-button {
+          height: 17px;
+          width: 22px;
+          position: relative;
+          left: 96px;
+          top: -29px;
+          background: white;
+          border-radius: 52%;
+          border: white;
+        }
+
+        .cancel-icon {
+          height: 15px;
+          width: 15px;
+          margin-left: 0px;
+          cursor: pointer;
+        }
+
+        .MuiButtonBase-root {
+          display: flex;
+          width: 214px;
+          margin-left: 14px;
+          & {
+            @media (min-width: 1200px) and (max-width: 1400px) {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-block {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 40px;
+    .flex-box {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: space-between;
+      width: 90%;
+    }
+    .dropdown-align {
+      .MuiAutocomplete-root {
+        width: 100%;
+      }
+    }
+  }
+}
+// View Screen
+.create-app-block-container.view-device {
+  .device-Input {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .device-label {
+    color: #8a8888;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+  }
+
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput {
+    border: none;
+    color: black;
+  }
+  .MuiButtonBase-root.Mui-disabled.MuiIconButton-root {
+    display: none;
+  }
+  .MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled {
+    -webkit-text-fill-color: #494949;
+    font-weight: bold;
+    padding-left: 0;
+  }
+}
+
+.text-style {
+  font-weight: bold;
+  color:#494949;
+  font-size: 14px;
+}

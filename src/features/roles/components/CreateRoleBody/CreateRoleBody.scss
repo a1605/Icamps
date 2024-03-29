@@ -1,0 +1,91 @@
+.create-role-body {
+  background-color: #f8f8f8;
+  padding: 10px 40px 20px 20px;
+  overflow: auto;
+
+  h3 {
+    color: #6467e4;
+  }
+
+  .create-role-info-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    color: #767676;
+    font-weight: 600;
+    padding: 10px;
+
+    .MuiInputBase-input.MuiOutlinedInput-input {
+      font-size: 14px;
+      font-family: InterMedium, sans-serif;
+      font-weight: 500;
+      &::placeholder {
+        color: #8a8888;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    .create-role-name {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      label {
+        margin-bottom: 10px;
+      }
+    }
+
+    hr {
+      border: 1px solid #f2f2f4;
+    }
+
+    .create-role-description {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 1000px;
+    }
+  }
+
+  .create-role-permissions-wrapper {
+    .create-role-permissions-section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+
+      h4 {
+        color: #8a8888;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+        text-transform: capitalize;
+      }
+
+      .checkbox-section {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.create-role-body.view-role {
+  .MuiInputBase-input.MuiOutlinedInput-input {
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-text-fill-color: #171616;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    outline: none;
+    border: none;
+  }
+}

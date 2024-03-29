@@ -1,0 +1,33 @@
+export const osdummyData=[{
+    "osId":"2467",
+    "sourceTicketId":"1234",
+    "androidOs":"Samsung Galaxy M14 5G",
+    "updatedBy":"Josef Merry",
+    "updatedOn":"2022-06-21",
+    "status":"Draft",
+},
+{
+    "osId":"2467",
+    "sourceTicketId":"1234",
+    "androidOs":"Samsung Galaxy M14 5G",
+    "updatedBy":"Josef Merry",
+    "updatedOn":"2022-06-21",
+    "status":"In-review",
+},
+{
+    "osId":"2467",
+    "sourceTicketId":"1234",
+    "androidOs":"Samsung Galaxy M14 5G",
+    "updatedBy":"Josef Merry",
+    "updatedOn":"2022-06-21",
+    "status":"Approved",
+},
+{
+    "osId":"2467",
+    "sourceTicketId":"1234",
+    "androidOs":"Samsung Galaxy M14 5G",
+    "updatedBy":"Josef Merry",
+    "updatedOn":"2022-06-21",
+    "status":"Rejected",
+},
+]

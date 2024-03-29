@@ -1,0 +1,49 @@
+.dashboard-container {
+  margin: 0px 25px;
+  display: flex;
+  // width: 100%;
+  justify-content: space-evenly;
+  & {
+    @media (max-width:1370px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .dashboard-assignee-container {
+    
+    display: flex;
+    width: 70%;
+    margin-left: 20px;
+    flex-direction: column;
+    & {
+      @media (max-width:1370px) {
+        width: 100%;
+      }
+    }
+   
+    h4 {
+      font-size: 16px;
+      letter-spacing: 3.2px;
+      color: #494949;
+    }
+    .Info-Container {
+      display: flex;
+      gap: 30px;
+    }
+  }
+  .assignee-container {
+
+    margin-left:30px;
+
+    h4{
+      font-size: 16px;
+      letter-spacing: 3.2px;
+      color: #494949;
+    }
+    .dashboard-right-card-container{
+      display: grid;
+      gap: 2rem;
+      
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.related-container {
+  .related-Label {
+    height: 21px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.18px;
+    color: #6467e4;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  .menu-item {
+    text-transform: capitalize;
+  }
+
+  .related-Input {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    // margin-right: 15px;
+    padding-right: 45px;
+
+    div.related-issue {
+      .MuiInputBase-root {
+        // display: block;
+        margin-left: 15px;
+        width: 100%;
+        height: 100%;
+      }
+      .MuiFormControl-root {
+        display: block;
+      }
+      &.issue {
+        width: 67%;
+      }
+      &.date {
+        width: 30%;
+      }
+    }
+  }
+
+  .issue-line {
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .action-issues {
+    height: 20px;
+    color: var(--unnamed-color-535353);
+    text-align: left;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.16px;
+    opacity: 1;
+    margin-left: 15px;
+  }
+
+  .checkbox-wrapper {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+    .checkbox-allign {
+      .MuiButtonBase-root {
+        height: 13px;
+        margin-bottom: 7px;
+      }
+
+      .MuiTypography-root {
+        font-size: 12px;
+        margin-top: -5px;
+      }
+
+      .MuiSvgIcon-root {
+        width: 17px;
+      }
+    }
+    .error {
+      margin-right: 30px;
+    }
+  }
+  .related-Input-box {
+    width: 100%;
+  }
+
+  .related-Input-box .MuiFormControl-root {
+    width: 95%;
+  }
+
+  .related-Input-box .MuiInputBase-root {
+    margin-left: -6px;
+    margin-top: 10px;
+    width: 100%;
+  }
+}

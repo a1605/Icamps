@@ -1,0 +1,42 @@
+.news-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+  height: 67px;
+  padding: 21px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & {
+    @media screen and (max-width: 1100px) {
+      padding: 21px 12px;
+    }
+  }
+
+  .news-title-wrapper {
+    padding-right: 27px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    gap: 30px;
+    & {
+      @media screen and (max-width: 1100px) {
+        gap: 10px;
+      }
+    }
+    .news-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #242424;
+      & {
+        @media screen and (max-width: 1100px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .indicator-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.plus-extra-chips {
+  display: flex;
+  align-items: center;
+  color: #323232;
+  font-size: 14px;
+  font-weight: bold;
+}
+.view-details-chips {
+  color: #6467e4;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+  white-space: nowrap;
+  flex: auto;
+}
+.show-chips-details {
+  position: fixed;
+  background-color: rgba(36, 36, 36, 0.15);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  z-index: 2;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: end;
+  &.show {
+    left: 0;
+  }
+  .role-name {
+    font-weight: 200;
+    font-size: 13px;
+  }
+  .chips-details-main-container {
+    background-color: white;
+    margin-top: 70px;
+    margin-left: 240px;
+    height: 100%;
+    width: 40%;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: auto;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: #6467e4;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 0.18px;
+      }
+      button {
+        background-color: #f1f3fc;
+        padding: 9px;
+        border: none;
+        font-weight: bold;
+        color: #959393;
+        font-size: 21px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+      }
+    }
+    .table-wrapper-chips-details {
+      margin-top: 45px;
+      overflow-y: auto;
+      margin-bottom: 50px;
+      table {
+        white-space: nowrap;
+        border-collapse: collapse;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+          // width: 10px;
+          height: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+        thead {
+          // display: block;
+          border-bottom: 1px solid #d8d5d5;
+          th {
+            color: #8a8888;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 20px 30px;
+            text-align: left;
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid #d8d5d5;
+            td {
+              color: #494949;
+              font-size: 14px;
+              font-weight: bold;
+              padding: 20px 30px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

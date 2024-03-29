@@ -1,0 +1,27 @@
+.device-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+  height: 67px;
+  padding: 21px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .device-title-wrapper {
+    padding-right: 27px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    gap: 30px;
+
+    .device-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .indicator-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+  }
+}

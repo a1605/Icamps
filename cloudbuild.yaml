@@ -1,0 +1,42 @@
+steps:
+  # Build the Docker image of the application using kaniko cache
+  - name: 'gcr.io/kaniko-project/executor:latest'
+    args:
+      [
+        "--dockerfile=Dockerfile",
+        "--cache=true",
+        "--cache-ttl=6h",
+        "--destination=asia-south1-docker.pkg.dev/$PROJECT_ID/iamai-dev-art-regi-as-s1/icamps-admin-frontend:${SHORT_SHA}"
+      ]
+  
+  # Update the latest image tag in deployment.yaml file
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: Generate manifest
+    entrypoint: '/bin/bash'
+    args:
+    - '-c'
+    - |
+      sed -i "s,COMMIT_SHA,${SHORT_SHA},g" ./deploy/deployment.yaml
+
+  # Deploy the application to the GKE using latest built docker image from artifact registry
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args: ['apply', '-f', './deploy/']
+    env:
+       - 'PROJECT_ID=$PROJECT_ID'
+       - 'COMMIT_SHA=$SHORT_SHA'
+       - 'CLOUDSDK_CONTAINER_CLUSTER=icamps'
+       - 'CLOUDSDK_COMPUTE_ZONE=asia-south1-a'
+
+  # Delete old Docker images based on a retention policy
+  - name: 'asia-docker.pkg.dev/gcr-cleaner/gcr-cleaner/gcr-cleaner-cli:latest'
+    args:
+      - -repo
+      - "asia-south1-docker.pkg.dev/$PROJECT_ID/iamai-dev-art-regi-as-s1/icamps-admin-frontend"
+      - -keep
+      - "10"
+      - -tag-filter-any
+      - ".*"
+
+options:
+  workerPool:
+    'projects/$PROJECT_ID/locations/asia-south1/workerPools/cloudbuild-worker-node'

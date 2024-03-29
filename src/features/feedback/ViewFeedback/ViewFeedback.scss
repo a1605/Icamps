@@ -1,0 +1,99 @@
+.create-container-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(36, 36, 36, 0.15);
+  padding-top: 70px;
+  transition: all 0.3s;
+  z-index: 2;
+  &.open-create {
+    left: 0;
+  }
+  .create-container-section {
+    background-color: white;
+    padding: 45px 65px;
+    width: 40%;
+    overflow-y: auto;
+    height: 100%;
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 21px;
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 21px;
+        color: #6467e4;
+        text-transform: capitalize;
+        letter-spacing: 0.18px;
+        margin-bottom: 15px;
+      }
+      a.close-link {
+        background-color: #f1f3fc;
+        padding: 9px;
+        border: none;
+        font-weight: bold;
+        color: #959393;
+        font-size: 21px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        margin: 0;
+      }
+    }
+  }
+
+  .form-container {
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+      color: #323232;
+      letter-spacing: 0.18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 35px;
+      .helper-text {
+        display: inline-block;
+        font-size: 12px;
+        color: grey;
+      }
+    }
+
+    .detailsContainer {
+      display: flex;
+      padding: 0px 40px;
+      border-radius: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #f1f3fc;
+      .keyMapper {
+        h4 {
+          color: #8a8888;
+        }
+        h5 {
+          font-weight: 400;
+        }
+      }
+    }
+    .dataContainer {
+      h4 {
+        color: #8a8888;
+        font-size: large;
+      }
+    }
+    .buttonContainer {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}

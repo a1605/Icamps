@@ -1,0 +1,17 @@
+.miscellaneous-filter-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 14px 0px 0px;
+  overflow-x: scroll;
+
+  .miscellaneous-search {
+    margin-left: 14px;
+    & {
+      @media (max-width: 1100px) {
+        margin-left: 12px;
+      }
+    }
+  }
+}

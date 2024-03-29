@@ -1,0 +1,106 @@
+.about-container {
+  .about-input {
+    margin: 20px 30px 20px 30px;
+
+    .file-input {
+      display: flex;
+      gap: 6rem;
+      grid-gap: 5rem;
+      & {
+        @media (max-width: 1970px) {
+          gap: 2rem;
+          flex-direction: column;
+        }
+      }
+
+      .upload-Button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        display: flex;
+        margin-left: 15px;
+        gap: 10px;
+        & {
+          @media (min-width: 1200px) and (max-width: 1370px) {
+            gap: 5px;
+          }
+        }
+
+        .image-upload-container {
+          margin-top: 10px;
+          height: 40px;
+          display: flex;
+          gap: 10px;
+          & {
+            @media (min-width: 1200px) and (max-width: 1370px) {
+              gap: 1px;
+            }
+          }
+          .image-preview {
+            position: relative;
+            .pdfContainer {
+              display: flex;
+              cursor: pointer;
+              p {
+                margin: 0;
+              }
+            }
+            img {
+              cursor: pointer;
+            }
+          }
+
+          .image-wrapper {
+            margin-left: 20px;
+            height: 40px;
+            & {
+              @media (min-width: 1200px) and (max-width: 1370px) {
+                margin-left: 5px;
+                height: 38px;
+              }
+            }
+          }
+
+          .cancel-icon-button {
+            height: 17px;
+            width: 22px;
+            position: absolute;
+            top: -7px;
+            left: 7px;
+            // right: 0;
+            background: white;
+            border-radius: 52%;
+            border: white;
+          }
+
+          .cancel-icon {
+            height: 15px;
+            width: 15px;
+            margin-left: 0px;
+            cursor: pointer;
+          }
+
+          .MuiButtonBase-root {
+            display: flex;
+            width: 214px;
+            margin-left: 14px;
+            & {
+              @media (min-width: 1200px) and (max-width: 1400px) {
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-label {
+    font-size: 18px;
+    margin-left: 0px;
+    color: black;
+    font-weight: bolder;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}

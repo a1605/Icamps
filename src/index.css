@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../src/assets/fonts/Inter.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("../src/assets/fonts/Inter_Medium.ttf");
+}
+
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}

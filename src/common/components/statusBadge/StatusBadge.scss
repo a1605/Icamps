@@ -1,0 +1,46 @@
+.status-badge {
+  border-radius: 18px;
+  padding: 6px 17px;
+  width: fit-content;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  
+
+  &:is(.IN_PROGRESS) {
+    background-color: #d6d5d5 !important;
+  }
+  &:is(.IN_APPROVAL) {
+    background-color: #fff0b2 !important;
+  }
+  &:is(.APPROVED) {
+    background-color: #b4ffc5 !important;
+  }
+  &:is(.REJECTED) {
+    background-color: #ffd0d0 !important;
+  }
+  &:is(.DELETED) {
+    background-color: #ffd0d0 !important;
+  }
+  &:is(.ADVICE_C) {
+    background-color: #fdf3be !important;
+  }
+  &:is(.ADVICE_A) {
+    background-color: #fdf3be !important;
+  }
+  &:is(.REQ_UNPUBLISHED) {
+    background-color: #fdf3be !important;
+  }
+  &:is(.UNPUBLISHED) {
+    background-color: #fdf3be !important;
+  }
+  &:is(.true) {
+    background-color: #b4ffc5 !important;
+  }
+  &:is(.false) {
+    background-color: #ffd0d0 !important;
+  }
+}

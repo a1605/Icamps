@@ -1,0 +1,125 @@
+.create-device-block-container {
+  display: flex;
+  flex-direction: row;
+
+  .device-Input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .device-label {
+      font-size: 14px;
+      margin-left: 0px;
+      color: black;
+      font-weight: 400;
+      display: block;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root {
+      margin-top: 8px;
+      .MuiInputBase-input {
+        font-size: 14px;
+      }
+      .MuiInputBase-input::placeholder {
+        font-size: 14px;
+        color: #838383;
+      }
+    }
+    .date-picker {
+      .MuiFormControl-root {
+        width: 90%;
+      }
+
+      .MuiInputBase-input {
+        padding: 8px;
+      }
+    }
+  }
+  .Os-Input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    .device-label {
+      font-size: 14px;
+      margin-left: 0px;
+      color: black;
+      font-weight: 400;
+      display: block;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root {
+      margin-top: 8px;
+      .MuiInputBase-input {
+        font-size: 14px;
+      }
+      .MuiInputBase-input::placeholder {
+        font-size: 14px;
+        color: #838383;
+      }
+    }
+    .date-picker {
+      .MuiFormControl-root {
+        width: 90%;
+      }
+
+      .MuiInputBase-input {
+        padding: 8px;
+      }
+    }
+  }
+  .multi-drop {
+    display: flex;
+    .os {
+      width: 90%;
+    }
+  }
+
+  .left-block {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    .dropdown-align {
+      .MuiAutocomplete-root {
+        width: 90%;
+      }
+    }
+  }
+
+  .right-block {
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 40px;
+
+    .dropdown-align {
+      .MuiAutocomplete-root {
+        width: 90%;
+      }
+    }
+  }
+}
+// View Screen
+.create-device-block-container.view-device {
+  .device-Input {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .device-label {
+    color: #8a8888;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+  }
+
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput {
+    border: none;
+    color: black;
+  }
+  .MuiButtonBase-root.Mui-disabled.MuiIconButton-root {
+    display: none;
+  }
+  .MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled {
+    -webkit-text-fill-color: #494949;
+    font-weight: bold;
+    padding-left: 0;
+  }
+}
