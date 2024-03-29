@@ -37,7 +37,7 @@
     "@vitejs/plugin-react": "4.2.1",
     "sass": "1.69.5",
     "vite": "4.5.0",
-    "postcss": "8.4.31"
+    "postcss": "8.4.38"
   },
   "main": "vite.config.js",
   "keywords": [],
