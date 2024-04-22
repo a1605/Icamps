@@ -13,7 +13,7 @@ import { http } from "../../services/httpServices";
 const Login = () => {
   const [loading, setLoading] = useState(false);
   const clientId =
-    "531687959146-c8kjmnt005l3stc3an9s4ns1c3und43u.apps.googleusercontent.com";
+    "960558193720-jaskimuipad65v54m1u7k0mve2043lpr.apps.googleusercontent.com";
 
   const { auth, setAuth } = useAuth();
 
